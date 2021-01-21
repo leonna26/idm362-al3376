@@ -36,6 +36,16 @@
                                     <segment title="Third"/>
                                 </segments>
                             </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6pJ-Tz-1H0">
+                                <rect key="frame" x="306" y="278" width="51" height="31"/>
+                                <color key="onTintColor" systemColor="systemTealColor"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Mode:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02I-BA-AXR">
+                                <rect key="frame" x="20" y="281" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -43,8 +53,13 @@
                             <constraint firstItem="t2Q-QU-uRq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Cd-wd-D2G"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t2Q-QU-uRq" secondAttribute="trailing" constant="20" id="6cm-NB-ofF"/>
                             <constraint firstItem="wAQ-zg-5VK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Irw-RW-IWq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6pJ-Tz-1H0" secondAttribute="trailing" constant="20" id="R5m-8A-NBY"/>
+                            <constraint firstItem="02I-BA-AXR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TOF-4f-aHL"/>
                             <constraint firstItem="wAQ-zg-5VK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VIV-l3-2fo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wAQ-zg-5VK" secondAttribute="trailing" constant="20" id="WPL-gy-j10"/>
+                            <constraint firstItem="6pJ-Tz-1H0" firstAttribute="top" secondItem="t2Q-QU-uRq" secondAttribute="bottom" constant="17" id="cUm-DJ-u3b"/>
+                            <constraint firstItem="02I-BA-AXR" firstAttribute="top" secondItem="t2Q-QU-uRq" secondAttribute="bottom" constant="20" id="cfP-5u-4KV"/>
+                            <constraint firstItem="6pJ-Tz-1H0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="02I-BA-AXR" secondAttribute="trailing" constant="8" symbolic="YES" id="fol-66-IPU"/>
                             <constraint firstItem="t2Q-QU-uRq" firstAttribute="top" secondItem="wAQ-zg-5VK" secondAttribute="bottom" constant="10" id="n6y-gM-e0j"/>
                         </constraints>
                     </view>
