@@ -27,13 +27,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="t2Q-QU-uRq">
+                                <rect key="frame" x="20" y="230" width="335" height="32"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="t2Q-QU-uRq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Cd-wd-D2G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t2Q-QU-uRq" secondAttribute="trailing" constant="20" id="6cm-NB-ofF"/>
                             <constraint firstItem="wAQ-zg-5VK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Irw-RW-IWq"/>
                             <constraint firstItem="wAQ-zg-5VK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VIV-l3-2fo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wAQ-zg-5VK" secondAttribute="trailing" constant="20" id="WPL-gy-j10"/>
+                            <constraint firstItem="t2Q-QU-uRq" firstAttribute="top" secondItem="wAQ-zg-5VK" secondAttribute="bottom" constant="10" id="n6y-gM-e0j"/>
                         </constraints>
                     </view>
                 </viewController>
