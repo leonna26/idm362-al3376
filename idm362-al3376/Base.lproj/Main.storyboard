@@ -76,9 +76,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2Q-cZ-KZf">
-                                        <rect key="frame" x="61" y="225" width="218" height="24"/>
+                                        <rect key="frame" x="61" y="225" width="232" height="24"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="what's your life expectancy?">
+                                            <fragment content="how long do you want to live?">
                                                 <attributes>
                                                     <font key="NSFont" size="17" name="Avenir-Medium"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -127,7 +127,7 @@
                         <viewLayoutGuide key="safeArea" id="MZW-R9-H6L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="tSu-0c-sAP"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="chart.pie" catalog="system" id="tSu-0c-sAP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVX-s4-9IO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,7 +190,6 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Month" translatesAutoresizingMaskIntoConstraints="NO" id="AK8-Rz-JvP">
                                         <rect key="frame" x="-36" y="191" width="447" height="341"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="341" id="nhb-Ol-IFi"/>
                                             <constraint firstAttribute="width" constant="447" id="wH8-oE-iMh"/>
                                         </constraints>
                                     </imageView>
@@ -201,14 +200,12 @@
                                     <constraint firstItem="Ptc-tv-Wk5" firstAttribute="trailing" secondItem="00N-Fr-ne8" secondAttribute="trailing" id="1CT-de-O2b"/>
                                     <constraint firstItem="Zjf-zx-VyF" firstAttribute="top" secondItem="00N-Fr-ne8" secondAttribute="top" constant="65" id="8K9-Qo-CqH"/>
                                     <constraint firstItem="00N-Fr-ne8" firstAttribute="trailing" secondItem="Zjf-zx-VyF" secondAttribute="trailing" constant="70" id="9qP-dj-E7O"/>
-                                    <constraint firstItem="AK8-Rz-JvP" firstAttribute="leading" secondItem="00N-Fr-ne8" secondAttribute="leading" constant="-36" id="B1J-LS-Mba"/>
+                                    <constraint firstItem="AK8-Rz-JvP" firstAttribute="centerX" secondItem="Ptc-tv-Wk5" secondAttribute="centerX" id="StH-NP-a6s"/>
                                     <constraint firstItem="00N-Fr-ne8" firstAttribute="bottom" secondItem="Ptc-tv-Wk5" secondAttribute="bottom" constant="63" id="T4M-3G-RgZ"/>
                                     <constraint firstItem="Ptc-tv-Wk5" firstAttribute="top" secondItem="AK8-Rz-JvP" secondAttribute="bottom" constant="-11" id="UJe-v3-GLJ"/>
                                     <constraint firstItem="AK8-Rz-JvP" firstAttribute="top" secondItem="Zjf-zx-VyF" secondAttribute="bottom" constant="52" id="ULc-te-FSN"/>
                                     <constraint firstItem="00N-Fr-ne8" firstAttribute="trailing" secondItem="0MZ-Pq-PdU" secondAttribute="trailing" constant="74" id="UZA-NF-kCb"/>
                                     <constraint firstItem="AK8-Rz-JvP" firstAttribute="top" secondItem="00N-Fr-ne8" secondAttribute="top" constant="191" id="f7L-iV-Vj4"/>
-                                    <constraint firstItem="00N-Fr-ne8" firstAttribute="trailing" secondItem="AK8-Rz-JvP" secondAttribute="trailing" constant="-36" id="hzU-TK-VU2"/>
-                                    <constraint firstItem="0MZ-Pq-PdU" firstAttribute="top" secondItem="Zjf-zx-VyF" secondAttribute="bottom" constant="8" id="lFN-cH-xqF"/>
                                     <constraint firstItem="AK8-Rz-JvP" firstAttribute="top" secondItem="0MZ-Pq-PdU" secondAttribute="bottom" constant="8" id="lTf-hc-pN7"/>
                                     <constraint firstItem="Ptc-tv-Wk5" firstAttribute="leading" secondItem="00N-Fr-ne8" secondAttribute="leading" id="lqc-GF-XSi"/>
                                     <constraint firstItem="0MZ-Pq-PdU" firstAttribute="top" secondItem="00N-Fr-ne8" secondAttribute="top" constant="147" id="nIC-AD-9r2"/>
@@ -221,7 +218,7 @@
                         <viewLayoutGuide key="safeArea" id="jBn-9J-Bu4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Month" id="GbH-Oy-aAO"/>
+                    <tabBarItem key="tabBarItem" title="Month" image="calendar.circle" catalog="system" id="GbH-Oy-aAO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIZ-pL-fJv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,6 +236,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDX-yj-LNU">
+                                        <rect key="frame" x="0.0" y="521" width="375" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="yAn-UU-v2x"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="make your life sweet. occu-pie your life well.">
+                                                <attributes>
+                                                    <color key="NSColor" systemColor="labelColor"/>
+                                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSV-c2-EBb">
                                         <rect key="frame" x="73" y="147" width="228" height="36"/>
                                         <attributedString key="attributedText">
@@ -265,42 +278,31 @@
                                         </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Piedisplay" translatesAutoresizingMaskIntoConstraints="NO" id="T2a-KE-wZA">
-                                        <rect key="frame" x="41" y="217" width="293" height="293"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Year" translatesAutoresizingMaskIntoConstraints="NO" id="T2a-KE-wZA">
+                                        <rect key="frame" x="11" y="180" width="356" height="356"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="HxD-sF-4ee"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="252" id="qtW-3G-aBO"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDX-yj-LNU">
-                                        <rect key="frame" x="0.0" y="743" width="428" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="make your life sweet. occu-pie your life well.">
-                                                <attributes>
-                                                    <color key="NSColor" systemColor="labelColor"/>
-                                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="BeP-S2-BXi"/>
                                 <color key="backgroundColor" red="0.87450980389999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="YSV-c2-EBb" firstAttribute="leading" secondItem="BeP-S2-BXi" secondAttribute="leading" constant="73" id="0fj-4t-h6Y"/>
+                                    <constraint firstItem="EDX-yj-LNU" firstAttribute="trailing" secondItem="BeP-S2-BXi" secondAttribute="trailing" id="7gj-2q-H7S"/>
                                     <constraint firstItem="YSV-c2-EBb" firstAttribute="top" secondItem="BeP-S2-BXi" secondAttribute="top" constant="147" id="Cqa-r2-7Ti"/>
                                     <constraint firstItem="BeP-S2-BXi" firstAttribute="trailing" secondItem="YSV-c2-EBb" secondAttribute="trailing" constant="74" id="KqG-rd-bFo"/>
-                                    <constraint firstItem="BeP-S2-BXi" firstAttribute="bottom" secondItem="T2a-KE-wZA" secondAttribute="bottom" constant="108" id="Mi9-Oc-Q57"/>
+                                    <constraint firstItem="BeP-S2-BXi" firstAttribute="bottom" secondItem="T2a-KE-wZA" secondAttribute="bottom" constant="82" id="Mi9-Oc-Q57"/>
+                                    <constraint firstItem="BeP-S2-BXi" firstAttribute="bottom" secondItem="EDX-yj-LNU" secondAttribute="bottom" constant="63" id="TeL-2n-v3V"/>
                                     <constraint firstItem="BeP-S2-BXi" firstAttribute="trailing" secondItem="pVV-QC-dUz" secondAttribute="trailing" constant="70" id="Xhw-bm-Wf3"/>
-                                    <constraint firstItem="T2a-KE-wZA" firstAttribute="top" secondItem="YSV-c2-EBb" secondAttribute="bottom" constant="34" id="cN4-9h-plI"/>
-                                    <constraint firstItem="T2a-KE-wZA" firstAttribute="top" secondItem="pVV-QC-dUz" secondAttribute="bottom" constant="78" id="cvE-9n-frX"/>
-                                    <constraint firstItem="BeP-S2-BXi" firstAttribute="trailing" secondItem="T2a-KE-wZA" secondAttribute="trailing" constant="41" id="eZ5-St-pJV"/>
-                                    <constraint firstItem="T2a-KE-wZA" firstAttribute="top" secondItem="BeP-S2-BXi" secondAttribute="top" constant="217" id="iSW-0r-k6G"/>
+                                    <constraint firstItem="T2a-KE-wZA" firstAttribute="top" secondItem="YSV-c2-EBb" secondAttribute="bottom" constant="-3" id="cN4-9h-plI"/>
+                                    <constraint firstItem="T2a-KE-wZA" firstAttribute="top" secondItem="pVV-QC-dUz" secondAttribute="bottom" constant="41" id="cvE-9n-frX"/>
+                                    <constraint firstItem="BeP-S2-BXi" firstAttribute="trailing" secondItem="T2a-KE-wZA" secondAttribute="trailing" constant="8" id="eZ5-St-pJV"/>
+                                    <constraint firstItem="T2a-KE-wZA" firstAttribute="top" secondItem="BeP-S2-BXi" secondAttribute="top" constant="180" id="iSW-0r-k6G"/>
                                     <constraint firstItem="pVV-QC-dUz" firstAttribute="leading" secondItem="BeP-S2-BXi" secondAttribute="leading" constant="69" id="pBc-gY-Vqi"/>
-                                    <constraint firstItem="T2a-KE-wZA" firstAttribute="leading" secondItem="BeP-S2-BXi" secondAttribute="leading" constant="41" id="xwj-R9-wio"/>
+                                    <constraint firstItem="EDX-yj-LNU" firstAttribute="leading" secondItem="BeP-S2-BXi" secondAttribute="leading" id="riy-tp-4DT"/>
+                                    <constraint firstItem="T2a-KE-wZA" firstAttribute="leading" secondItem="BeP-S2-BXi" secondAttribute="leading" constant="11" id="xwj-R9-wio"/>
                                     <constraint firstItem="pVV-QC-dUz" firstAttribute="top" secondItem="BeP-S2-BXi" secondAttribute="top" constant="65" id="zAD-R6-O6C"/>
                                 </constraints>
                             </view>
@@ -308,11 +310,11 @@
                         <viewLayoutGuide key="safeArea" id="2wr-zR-ng1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Year" id="dZ1-UO-pnf"/>
+                    <tabBarItem key="tabBarItem" title="Year" image="leaf.arrow.triangle.circlepath" catalog="system" id="dZ1-UO-pnf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRe-SL-qEj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="998" y="-904"/>
+            <point key="canvasLocation" x="997.60000000000002" y="-904.49775112443785"/>
         </scene>
         <!--Life-->
         <scene sceneID="3O6-hz-9t7">
@@ -352,16 +354,8 @@
                                         </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Piedisplay" translatesAutoresizingMaskIntoConstraints="NO" id="LYt-wM-z2c">
-                                        <rect key="frame" x="41" y="217" width="293" height="293"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="6hR-fC-ePf"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="252" id="Vdu-Cq-wTy"/>
-                                        </constraints>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SV0-Go-Zju">
-                                        <rect key="frame" x="-1" y="743" width="428" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SV0-Go-Zju">
+                                        <rect key="frame" x="0.0" y="521" width="375" height="34"/>
                                         <attributedString key="attributedText">
                                             <fragment content="make your life sweet. occu-pie your life well.">
                                                 <attributes>
@@ -373,20 +367,30 @@
                                         </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Life" translatesAutoresizingMaskIntoConstraints="NO" id="LYt-wM-z2c">
+                                        <rect key="frame" x="20" y="191" width="335" height="335"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="6hR-fC-ePf"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="n88-82-fZ5"/>
                                 <color key="backgroundColor" red="0.87450980389999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="SV0-Go-Zju" firstAttribute="trailing" secondItem="n88-82-fZ5" secondAttribute="trailing" id="0gn-mw-MsS"/>
                                     <constraint firstItem="eFB-RU-sZk" firstAttribute="leading" secondItem="n88-82-fZ5" secondAttribute="leading" constant="69" id="4Ur-yR-94P"/>
-                                    <constraint firstItem="LYt-wM-z2c" firstAttribute="top" secondItem="n88-82-fZ5" secondAttribute="top" constant="217" id="5TQ-j4-vbg"/>
+                                    <constraint firstItem="LYt-wM-z2c" firstAttribute="top" secondItem="n88-82-fZ5" secondAttribute="top" constant="191" id="5TQ-j4-vbg"/>
                                     <constraint firstItem="vXD-B3-DvH" firstAttribute="top" secondItem="n88-82-fZ5" secondAttribute="top" constant="147" id="5yD-ey-Zcp"/>
-                                    <constraint firstItem="n88-82-fZ5" firstAttribute="bottom" secondItem="LYt-wM-z2c" secondAttribute="bottom" constant="108" id="GsT-eq-zzv"/>
-                                    <constraint firstItem="n88-82-fZ5" firstAttribute="trailing" secondItem="LYt-wM-z2c" secondAttribute="trailing" constant="41" id="QbR-fm-BlH"/>
-                                    <constraint firstItem="LYt-wM-z2c" firstAttribute="top" secondItem="eFB-RU-sZk" secondAttribute="bottom" constant="78" id="S7L-G7-m4p"/>
+                                    <constraint firstItem="n88-82-fZ5" firstAttribute="bottom" secondItem="LYt-wM-z2c" secondAttribute="bottom" constant="92" id="GsT-eq-zzv"/>
+                                    <constraint firstItem="n88-82-fZ5" firstAttribute="bottom" secondItem="SV0-Go-Zju" secondAttribute="bottom" constant="63" id="IIA-Me-CFw"/>
+                                    <constraint firstItem="n88-82-fZ5" firstAttribute="trailing" secondItem="LYt-wM-z2c" secondAttribute="trailing" constant="20" id="QbR-fm-BlH"/>
+                                    <constraint firstItem="LYt-wM-z2c" firstAttribute="top" secondItem="eFB-RU-sZk" secondAttribute="bottom" constant="52" id="S7L-G7-m4p"/>
                                     <constraint firstItem="n88-82-fZ5" firstAttribute="trailing" secondItem="eFB-RU-sZk" secondAttribute="trailing" constant="70" id="VRr-TP-EZO"/>
+                                    <constraint firstItem="SV0-Go-Zju" firstAttribute="top" secondItem="LYt-wM-z2c" secondAttribute="bottom" constant="-5" id="YFB-Td-hCI"/>
                                     <constraint firstItem="eFB-RU-sZk" firstAttribute="top" secondItem="n88-82-fZ5" secondAttribute="top" constant="65" id="anD-4j-xcC"/>
-                                    <constraint firstItem="LYt-wM-z2c" firstAttribute="leading" secondItem="n88-82-fZ5" secondAttribute="leading" constant="41" id="aw4-0i-hUe"/>
-                                    <constraint firstItem="LYt-wM-z2c" firstAttribute="top" secondItem="vXD-B3-DvH" secondAttribute="bottom" constant="34" id="lbM-5V-vPc"/>
+                                    <constraint firstItem="LYt-wM-z2c" firstAttribute="leading" secondItem="n88-82-fZ5" secondAttribute="leading" constant="20" id="aw4-0i-hUe"/>
+                                    <constraint firstItem="SV0-Go-Zju" firstAttribute="leading" secondItem="n88-82-fZ5" secondAttribute="leading" id="jas-AL-K6W"/>
+                                    <constraint firstItem="LYt-wM-z2c" firstAttribute="top" secondItem="vXD-B3-DvH" secondAttribute="bottom" constant="8" id="lbM-5V-vPc"/>
                                     <constraint firstItem="n88-82-fZ5" firstAttribute="trailing" secondItem="vXD-B3-DvH" secondAttribute="trailing" constant="74" id="x86-Mo-JRe"/>
                                     <constraint firstItem="vXD-B3-DvH" firstAttribute="leading" secondItem="n88-82-fZ5" secondAttribute="leading" constant="73" id="yug-HB-jnC"/>
                                 </constraints>
@@ -395,11 +399,11 @@
                         <viewLayoutGuide key="safeArea" id="MiI-sb-xni"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Life" id="mwi-NK-4wk"/>
+                    <tabBarItem key="tabBarItem" title="Life" image="heart.circle" catalog="system" id="mwi-NK-4wk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FkP-8u-odF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1689" y="-904"/>
+            <point key="canvasLocation" x="1687.2" y="-905.3973013493254"/>
         </scene>
         <!--Day-->
         <scene sceneID="rcg-s3-gRZ">
@@ -435,7 +439,7 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Piedisplay" translatesAutoresizingMaskIntoConstraints="NO" id="PQo-WN-V7I">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Day" translatesAutoresizingMaskIntoConstraints="NO" id="PQo-WN-V7I">
                                 <rect key="frame" x="41" y="217" width="293" height="293"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="252" id="0tj-PU-qfd"/>
@@ -477,7 +481,7 @@
                             <constraint firstItem="SDe-h6-niS" firstAttribute="trailing" secondItem="PQo-WN-V7I" secondAttribute="trailing" constant="41" id="x8p-Kt-fX3"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Day" image="house" catalog="system" id="Wsd-8g-YP9">
+                    <tabBarItem key="tabBarItem" title="Day" image="moon.circle" catalog="system" id="Wsd-8g-YP9">
                         <color key="badgeColor" red="0.80392156859999997" green="0.96078431369999995" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                 </viewController>
@@ -488,6 +492,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Qas-4d-bb0">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W2Q-tX-skL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ifb-9B-lmK" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jU5-2q-cpU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -503,16 +508,20 @@
                         <segue destination="HS6-la-KyG" kind="relationship" relationship="viewControllers" id="PxA-e7-Kx2"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W2Q-tX-skL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="286" y="-1630"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Day" width="512" height="512"/>
+        <image name="Life" width="174.5" height="160.5"/>
         <image name="Month" width="196.5" height="176.5"/>
-        <image name="Piedisplay" width="512" height="512"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="Year" width="186.5" height="170"/>
+        <image name="calendar.circle" catalog="system" width="128" height="121"/>
+        <image name="chart.pie" catalog="system" width="128" height="121"/>
+        <image name="heart.circle" catalog="system" width="128" height="121"/>
+        <image name="leaf.arrow.triangle.circlepath" catalog="system" width="121" height="128"/>
+        <image name="moon.circle" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.94900000095367432" green="0.62000000476837158" blue="0.88400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
