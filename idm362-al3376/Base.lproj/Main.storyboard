@@ -332,7 +332,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my day in pie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQG-Un-Zhg">
-                                <rect key="frame" x="73" y="147" width="228" height="36"/>
+                                <rect key="frame" x="73" y="147" width="228" height="37"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -343,39 +343,40 @@
                                 <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="60"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Day" translatesAutoresizingMaskIntoConstraints="NO" id="PQo-WN-V7I">
-                                <rect key="frame" x="41" y="217" width="293" height="293"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="252" id="0tj-PU-qfd"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="yfV-V7-A5t"/>
-                                </constraints>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="make your life sweet. occu-pie your life well." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yf9-js-WbU">
                                 <rect key="frame" x="0.0" y="518" width="375" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="pDx-3q-KkN"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Oh-84-h6x">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Iyb-Sx-RzR"/>
+                                    <constraint firstAttribute="height" constant="240" id="WVR-qW-gkA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SDe-h6-niS"/>
                         <color key="backgroundColor" red="0.87450980392156863" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SDe-h6-niS" firstAttribute="trailing" secondItem="VQG-Un-Zhg" secondAttribute="trailing" constant="74" id="2g2-pi-8ru"/>
-                            <constraint firstItem="SDe-h6-niS" firstAttribute="bottom" secondItem="PQo-WN-V7I" secondAttribute="bottom" constant="108" id="42U-jZ-zdw"/>
                             <constraint firstItem="QLU-6Z-wgh" firstAttribute="leading" secondItem="SDe-h6-niS" secondAttribute="leading" constant="69" id="4Ee-ht-Wq9"/>
-                            <constraint firstItem="PQo-WN-V7I" firstAttribute="top" secondItem="QLU-6Z-wgh" secondAttribute="bottom" constant="78" id="75y-KT-TyM"/>
                             <constraint firstItem="VQG-Un-Zhg" firstAttribute="top" secondItem="SDe-h6-niS" secondAttribute="top" constant="147" id="9Ci-hu-H8N"/>
-                            <constraint firstItem="PQo-WN-V7I" firstAttribute="top" secondItem="SDe-h6-niS" secondAttribute="top" constant="217" id="AWq-f6-IWW"/>
+                            <constraint firstItem="4Oh-84-h6x" firstAttribute="top" secondItem="VQG-Un-Zhg" secondAttribute="bottom" constant="29.5" id="Aby-Xo-cGJ"/>
                             <constraint firstItem="SDe-h6-niS" firstAttribute="trailing" secondItem="QLU-6Z-wgh" secondAttribute="trailing" constant="70" id="B9G-40-Zu9"/>
-                            <constraint firstItem="Yf9-js-WbU" firstAttribute="top" secondItem="PQo-WN-V7I" secondAttribute="bottom" constant="8" id="BTY-Mx-uKH"/>
+                            <constraint firstItem="4Oh-84-h6x" firstAttribute="centerX" secondItem="aMg-D1-M5v" secondAttribute="centerX" id="DqH-ZR-Rjh"/>
                             <constraint firstItem="SDe-h6-niS" firstAttribute="trailing" secondItem="Yf9-js-WbU" secondAttribute="trailing" id="SGd-Ze-zOJ"/>
+                            <constraint firstItem="VQG-Un-Zhg" firstAttribute="top" secondItem="QLU-6Z-wgh" secondAttribute="bottom" constant="8" id="VyX-l4-7vq"/>
                             <constraint firstItem="Yf9-js-WbU" firstAttribute="leading" secondItem="SDe-h6-niS" secondAttribute="leading" id="ZvX-Bo-WJA"/>
                             <constraint firstItem="VQG-Un-Zhg" firstAttribute="leading" secondItem="SDe-h6-niS" secondAttribute="leading" constant="73" id="bMq-1J-5as"/>
-                            <constraint firstItem="PQo-WN-V7I" firstAttribute="top" secondItem="VQG-Un-Zhg" secondAttribute="bottom" constant="34" id="ggi-3O-YnH"/>
+                            <constraint firstItem="4Oh-84-h6x" firstAttribute="centerY" secondItem="aMg-D1-M5v" secondAttribute="centerY" id="cv2-hC-4nX"/>
                             <constraint firstItem="QLU-6Z-wgh" firstAttribute="top" secondItem="SDe-h6-niS" secondAttribute="top" constant="65" id="ghk-qT-Fxq"/>
-                            <constraint firstItem="PQo-WN-V7I" firstAttribute="leading" secondItem="SDe-h6-niS" secondAttribute="leading" constant="41" id="lYn-q0-6JU"/>
                             <constraint firstItem="SDe-h6-niS" firstAttribute="bottom" secondItem="Yf9-js-WbU" secondAttribute="bottom" constant="66" id="ppL-ep-rZK"/>
-                            <constraint firstItem="SDe-h6-niS" firstAttribute="trailing" secondItem="PQo-WN-V7I" secondAttribute="trailing" constant="41" id="x8p-Kt-fX3"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Day" image="moon.circle" catalog="system" id="Wsd-8g-YP9">
@@ -410,7 +411,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Day" width="512" height="512"/>
         <image name="Life" width="174.5" height="160.5"/>
         <image name="Month" width="196.5" height="176.5"/>
         <image name="Year" width="186.5" height="170"/>
