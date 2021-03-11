@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C002E51325F5C961005FFAF2 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = C002E51225F5C961005FFAF2 /* Charts */; };
 		C002E51E25F5D23C005FFAF2 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C002E51D25F5D23C005FFAF2 /* PieChartViewController.swift */; };
+		C0831C5125FA81210067557F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0831C5025FA81200067557F /* SettingsViewController.swift */; };
 		C08A998025E976D300E3F61C /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C08A997925E976D300E3F61C /* DMSans-Regular.ttf */; };
 		C08A998125E976D300E3F61C /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C08A997A25E976D300E3F61C /* DMSans-Medium.ttf */; };
 		C08A998225E976D300E3F61C /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C08A997B25E976D300E3F61C /* DMSans-Bold.ttf */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		C002E51D25F5D23C005FFAF2 /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
+		C0831C5025FA81200067557F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C08A997925E976D300E3F61C /* DMSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Regular.ttf"; sourceTree = "<group>"; };
 		C08A997A25E976D300E3F61C /* DMSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Medium.ttf"; sourceTree = "<group>"; };
 		C08A997B25E976D300E3F61C /* DMSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				C0E7884225BA2CF500FBCEAB /* SceneDelegate.swift */,
 				C0E7884425BA2CF500FBCEAB /* ViewController.swift */,
 				C0E7884625BA2CF500FBCEAB /* Main.storyboard */,
+				C0831C5025FA81200067557F /* SettingsViewController.swift */,
 				C002E51D25F5D23C005FFAF2 /* PieChartViewController.swift */,
 				C0E7884925BA2CFA00FBCEAB /* Assets.xcassets */,
 				C0E7884B25BA2CFA00FBCEAB /* LaunchScreen.storyboard */,
@@ -187,6 +190,7 @@
 				C0E7884525BA2CF500FBCEAB /* ViewController.swift in Sources */,
 				C0E7884125BA2CF500FBCEAB /* AppDelegate.swift in Sources */,
 				C002E51E25F5D23C005FFAF2 /* PieChartViewController.swift in Sources */,
+				C0831C5125FA81210067557F /* SettingsViewController.swift in Sources */,
 				C0E7884325BA2CF500FBCEAB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
