@@ -22,6 +22,14 @@ class PieChartViewController: UIViewController {
     
     customizeChart(dataPoints: players, values: goals.map{ Double($0) })
   }
+    
+// func lifeExpectancy() {
+// var secondsInAYear = 60 * 60 * 24 * getDaysOfAYear();
+// var secondsInAverageLife = secondsInAYear * lifeExpectancy.value;
+// var secondsInYourLife = secondsInAYear * ageInput.value;
+// console.log(secondsInYourLife);
+// return (secondsInYourLife / secondsInAverageLife) * 100;
+// }
   
   func customizeChart(dataPoints: [String], values: [Double]) {
     
