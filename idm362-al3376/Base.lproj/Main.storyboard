@@ -20,7 +20,7 @@
         <!--Settings-->
         <scene sceneID="MnI-rJ-0QM">
             <objects>
-                <viewController id="HS6-la-KyG" customClass="SettingsViewController" customModule="idm362_al3376" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HS6-la-KyG" customClass="SettingViewController" customModule="idm362_al3376" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w8r-Cu-A0K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,24 +29,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0o-gz-dZb">
-                                        <rect key="frame" x="125" y="362.5" width="125" height="32"/>
-                                        <color key="backgroundColor" red="0.80392156859999997" green="0.96078431369999995" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="15"/>
-                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="SAVE"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                <integer key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Settings" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="out-r8-rDC">
                                         <rect key="frame" x="20" y="34" width="335" height="50"/>
                                         <constraints>
@@ -68,12 +50,12 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RZW-Kj-Hrn">
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="21" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RZW-Kj-Hrn">
                                         <rect key="frame" x="61" y="169" width="252" height="34"/>
                                         <attributedString key="attributedText"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="continue"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpc-bL-vYs">
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="78" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpc-bL-vYs">
                                         <rect key="frame" x="61" y="255.5" width="252" height="34"/>
                                         <attributedString key="attributedText"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -93,15 +75,12 @@
                                     <constraint firstItem="u9h-tH-emJ" firstAttribute="leading" secondItem="rR2-BZ-tRI" secondAttribute="leading" constant="61" id="W1l-qv-Ug1"/>
                                     <constraint firstItem="fpc-bL-vYs" firstAttribute="leading" secondItem="rR2-BZ-tRI" secondAttribute="leading" constant="61" id="Y0M-7a-QeA"/>
                                     <constraint firstItem="fpc-bL-vYs" firstAttribute="top" secondItem="R2Q-cZ-KZf" secondAttribute="bottom" constant="8" id="crU-nQ-2o6"/>
-                                    <constraint firstItem="t0o-gz-dZb" firstAttribute="top" secondItem="fpc-bL-vYs" secondAttribute="bottom" constant="73" id="eFs-gJ-oP6"/>
                                     <constraint firstItem="out-r8-rDC" firstAttribute="top" secondItem="rR2-BZ-tRI" secondAttribute="top" constant="34" id="eqf-3W-zDz"/>
                                     <constraint firstItem="rR2-BZ-tRI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="u9h-tH-emJ" secondAttribute="trailing" symbolic="YES" id="fVa-Ph-hpo"/>
                                     <constraint firstItem="rR2-BZ-tRI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R2Q-cZ-KZf" secondAttribute="trailing" symbolic="YES" id="jSJ-Ew-JJb"/>
-                                    <constraint firstItem="rR2-BZ-tRI" firstAttribute="trailing" secondItem="t0o-gz-dZb" secondAttribute="trailing" constant="125" id="mMn-Q8-Klv"/>
                                     <constraint firstItem="R2Q-cZ-KZf" firstAttribute="top" secondItem="RZW-Kj-Hrn" secondAttribute="bottom" constant="22" id="qcZ-pt-bCi"/>
                                     <constraint firstItem="u9h-tH-emJ" firstAttribute="top" secondItem="out-r8-rDC" secondAttribute="bottom" constant="53" id="tHK-Rf-KvT"/>
                                     <constraint firstItem="RZW-Kj-Hrn" firstAttribute="top" secondItem="out-r8-rDC" secondAttribute="bottom" constant="85" id="vx6-98-1UH"/>
-                                    <constraint firstItem="t0o-gz-dZb" firstAttribute="leading" secondItem="rR2-BZ-tRI" secondAttribute="leading" constant="125" id="wJg-xx-Rlb"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -109,6 +88,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="chart.pie" catalog="system" id="tSu-0c-sAP"/>
+                    <connections>
+                        <outlet property="ageText" destination="RZW-Kj-Hrn" id="vOQ-Fw-4vn"/>
+                        <outlet property="expectancyText" destination="fpc-bL-vYs" id="SLb-BO-bnQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVX-s4-9IO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,7 +100,7 @@
         <!--Month-->
         <scene sceneID="Xf1-4N-pgE">
             <objects>
-                <viewController id="r5E-7J-Xrx" customClass="MonthChartViewController" customModule="idm362_al3376" sceneMemberID="viewController">
+                <viewController id="r5E-7J-Xrx" customClass="MonthChartViewController" customModule="idm362_al3376" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bRI-Le-mbg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,7 +109,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my month in pie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MZ-Pq-PdU">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my month used in pie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MZ-Pq-PdU">
                                         <rect key="frame" x="73" y="147" width="228" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="Jn6-tU-PWQ"/>
@@ -135,8 +118,11 @@
                                         <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="45%" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjf-zx-VyF">
-                                        <rect key="frame" x="69" y="65" width="236" height="85"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="65%" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjf-zx-VyF">
+                                        <rect key="frame" x="69" y="65" width="236" height="88"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="88" id="Mv7-ot-9zC"/>
+                                        </constraints>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="60"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -150,27 +136,29 @@
                                         <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Month" translatesAutoresizingMaskIntoConstraints="NO" id="pVc-lX-oUq">
-                                        <rect key="frame" x="-7" y="190" width="389" height="323"/>
-                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0I5-56-zbV" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="50" y="196" width="275" height="275"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="275" id="aVJ-Pz-DSJ"/>
+                                            <constraint firstAttribute="height" constant="275" id="rP5-Dn-u7W"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="00N-Fr-ne8"/>
                                 <color key="backgroundColor" red="0.87450980389999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Ptc-tv-Wk5" firstAttribute="trailing" secondItem="00N-Fr-ne8" secondAttribute="trailing" id="1CT-de-O2b"/>
-                                    <constraint firstItem="pVc-lX-oUq" firstAttribute="top" secondItem="0MZ-Pq-PdU" secondAttribute="bottom" constant="7" id="6hw-ad-oVY"/>
                                     <constraint firstItem="Zjf-zx-VyF" firstAttribute="top" secondItem="00N-Fr-ne8" secondAttribute="top" constant="65" id="8K9-Qo-CqH"/>
                                     <constraint firstItem="00N-Fr-ne8" firstAttribute="trailing" secondItem="Zjf-zx-VyF" secondAttribute="trailing" constant="70" id="9qP-dj-E7O"/>
                                     <constraint firstItem="00N-Fr-ne8" firstAttribute="bottom" secondItem="Ptc-tv-Wk5" secondAttribute="bottom" constant="63" id="T4M-3G-RgZ"/>
-                                    <constraint firstItem="pVc-lX-oUq" firstAttribute="centerX" secondItem="Ptc-tv-Wk5" secondAttribute="centerX" id="UDn-OM-QbM"/>
                                     <constraint firstItem="00N-Fr-ne8" firstAttribute="trailing" secondItem="0MZ-Pq-PdU" secondAttribute="trailing" constant="74" id="UZA-NF-kCb"/>
-                                    <constraint firstItem="pVc-lX-oUq" firstAttribute="top" secondItem="Zjf-zx-VyF" secondAttribute="bottom" constant="40" id="XaV-Oe-PG0"/>
+                                    <constraint firstItem="0I5-56-zbV" firstAttribute="centerY" secondItem="N13-Ig-O56" secondAttribute="centerY" id="kPL-Ei-xKL"/>
                                     <constraint firstItem="Ptc-tv-Wk5" firstAttribute="leading" secondItem="00N-Fr-ne8" secondAttribute="leading" id="lqc-GF-XSi"/>
                                     <constraint firstItem="0MZ-Pq-PdU" firstAttribute="top" secondItem="00N-Fr-ne8" secondAttribute="top" constant="147" id="nIC-AD-9r2"/>
-                                    <constraint firstItem="Ptc-tv-Wk5" firstAttribute="top" secondItem="pVc-lX-oUq" secondAttribute="bottom" constant="8" symbolic="YES" id="qwa-W8-qqj"/>
                                     <constraint firstItem="0MZ-Pq-PdU" firstAttribute="leading" secondItem="00N-Fr-ne8" secondAttribute="leading" constant="73" id="tI3-eO-o36"/>
                                     <constraint firstItem="Zjf-zx-VyF" firstAttribute="leading" secondItem="00N-Fr-ne8" secondAttribute="leading" constant="69" id="vBH-3c-LMT"/>
-                                    <constraint firstItem="pVc-lX-oUq" firstAttribute="leading" secondItem="N13-Ig-O56" secondAttribute="leading" constant="-7" id="zlP-WN-ddA"/>
+                                    <constraint firstItem="0I5-56-zbV" firstAttribute="centerX" secondItem="N13-Ig-O56" secondAttribute="centerX" id="zoV-j1-aeS"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -178,6 +166,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Month" image="calendar.circle" catalog="system" id="GbH-Oy-aAO"/>
+                    <connections>
+                        <outlet property="monthChart" destination="0I5-56-zbV" id="yOk-54-BcA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIZ-pL-fJv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,7 +177,7 @@
         <!--Year-->
         <scene sceneID="O3j-wy-t2D">
             <objects>
-                <viewController id="HAt-3f-XT2" sceneMemberID="viewController">
+                <viewController id="HAt-3f-XT2" customClass="YearChartViewController" customModule="idm362_al3376" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZlD-fc-oN1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,25 +195,29 @@
                                         <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my year in pie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSV-c2-EBb">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my year used in pie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSV-c2-EBb">
                                         <rect key="frame" x="73" y="147" width="228" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="huI-w1-KUs"/>
+                                        </constraints>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="16%" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVV-QC-dUz">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="12%" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVV-QC-dUz">
                                         <rect key="frame" x="69" y="65" width="236" height="74"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="60"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Year" translatesAutoresizingMaskIntoConstraints="NO" id="T2a-KE-wZA">
-                                        <rect key="frame" x="11" y="180" width="356" height="356"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0K-vD-ZDx" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="50" y="196" width="275" height="275"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="HxD-sF-4ee"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="252" id="qtW-3G-aBO"/>
+                                            <constraint firstAttribute="width" constant="275" id="8Vz-YF-aDo"/>
+                                            <constraint firstAttribute="height" constant="275" id="Jpv-VJ-0cF"/>
                                         </constraints>
-                                    </imageView>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="BeP-S2-BXi"/>
                                 <color key="backgroundColor" red="0.87450980389999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -231,16 +226,13 @@
                                     <constraint firstItem="EDX-yj-LNU" firstAttribute="trailing" secondItem="BeP-S2-BXi" secondAttribute="trailing" id="7gj-2q-H7S"/>
                                     <constraint firstItem="YSV-c2-EBb" firstAttribute="top" secondItem="BeP-S2-BXi" secondAttribute="top" constant="147" id="Cqa-r2-7Ti"/>
                                     <constraint firstItem="BeP-S2-BXi" firstAttribute="trailing" secondItem="YSV-c2-EBb" secondAttribute="trailing" constant="74" id="KqG-rd-bFo"/>
-                                    <constraint firstItem="BeP-S2-BXi" firstAttribute="bottom" secondItem="T2a-KE-wZA" secondAttribute="bottom" constant="82" id="Mi9-Oc-Q57"/>
+                                    <constraint firstItem="e0K-vD-ZDx" firstAttribute="centerX" secondItem="mXD-KJ-Xlk" secondAttribute="centerX" id="N9L-JQ-AjX"/>
                                     <constraint firstItem="BeP-S2-BXi" firstAttribute="bottom" secondItem="EDX-yj-LNU" secondAttribute="bottom" constant="63" id="TeL-2n-v3V"/>
                                     <constraint firstItem="BeP-S2-BXi" firstAttribute="trailing" secondItem="pVV-QC-dUz" secondAttribute="trailing" constant="70" id="Xhw-bm-Wf3"/>
-                                    <constraint firstItem="T2a-KE-wZA" firstAttribute="top" secondItem="YSV-c2-EBb" secondAttribute="bottom" constant="-3" id="cN4-9h-plI"/>
-                                    <constraint firstItem="T2a-KE-wZA" firstAttribute="top" secondItem="pVV-QC-dUz" secondAttribute="bottom" constant="41" id="cvE-9n-frX"/>
-                                    <constraint firstItem="BeP-S2-BXi" firstAttribute="trailing" secondItem="T2a-KE-wZA" secondAttribute="trailing" constant="8" id="eZ5-St-pJV"/>
-                                    <constraint firstItem="T2a-KE-wZA" firstAttribute="top" secondItem="BeP-S2-BXi" secondAttribute="top" constant="180" id="iSW-0r-k6G"/>
+                                    <constraint firstItem="e0K-vD-ZDx" firstAttribute="centerY" secondItem="mXD-KJ-Xlk" secondAttribute="centerY" id="nGd-DH-lIu"/>
                                     <constraint firstItem="pVV-QC-dUz" firstAttribute="leading" secondItem="BeP-S2-BXi" secondAttribute="leading" constant="69" id="pBc-gY-Vqi"/>
                                     <constraint firstItem="EDX-yj-LNU" firstAttribute="leading" secondItem="BeP-S2-BXi" secondAttribute="leading" id="riy-tp-4DT"/>
-                                    <constraint firstItem="T2a-KE-wZA" firstAttribute="leading" secondItem="BeP-S2-BXi" secondAttribute="leading" constant="11" id="xwj-R9-wio"/>
+                                    <constraint firstItem="YSV-c2-EBb" firstAttribute="top" secondItem="pVV-QC-dUz" secondAttribute="bottom" constant="8" id="z9r-J5-xa6"/>
                                     <constraint firstItem="pVV-QC-dUz" firstAttribute="top" secondItem="BeP-S2-BXi" secondAttribute="top" constant="65" id="zAD-R6-O6C"/>
                                 </constraints>
                             </view>
@@ -249,6 +241,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Year" image="leaf.arrow.triangle.circlepath" catalog="system" id="dZ1-UO-pnf"/>
+                    <connections>
+                        <outlet property="yearChart" destination="e0K-vD-ZDx" id="bb5-rN-KaT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRe-SL-qEj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,7 +252,7 @@
         <!--Life-->
         <scene sceneID="3O6-hz-9t7">
             <objects>
-                <viewController id="0ee-2G-zdn" sceneMemberID="viewController">
+                <viewController id="0ee-2G-zdn" customClass="LifeChartViewController" customModule="idm362_al3376" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3jE-2X-bHw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -266,13 +261,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my life in pie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXD-B3-DvH">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my life in pie used" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXD-B3-DvH">
                                         <rect key="frame" x="73" y="147" width="228" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="aZy-zm-bxa"/>
+                                        </constraints>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="23%" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFB-RU-sZk">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="27%" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFB-RU-sZk">
                                         <rect key="frame" x="69" y="65" width="236" height="74"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="60"/>
@@ -280,34 +278,35 @@
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="make your life sweet. occu-pie your life well." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SV0-Go-Zju">
                                         <rect key="frame" x="0.0" y="521" width="375" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="XCX-Pb-uTz"/>
+                                        </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Life" translatesAutoresizingMaskIntoConstraints="NO" id="LYt-wM-z2c">
-                                        <rect key="frame" x="20" y="191" width="335" height="335"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMo-Fa-uxx" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="50" y="196" width="275" height="275"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="6hR-fC-ePf"/>
+                                            <constraint firstAttribute="width" constant="275" id="f1w-ic-FPU"/>
+                                            <constraint firstAttribute="height" constant="275" id="ffp-10-quD"/>
                                         </constraints>
-                                    </imageView>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="n88-82-fZ5"/>
                                 <color key="backgroundColor" red="0.87450980389999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="SV0-Go-Zju" firstAttribute="trailing" secondItem="n88-82-fZ5" secondAttribute="trailing" id="0gn-mw-MsS"/>
                                     <constraint firstItem="eFB-RU-sZk" firstAttribute="leading" secondItem="n88-82-fZ5" secondAttribute="leading" constant="69" id="4Ur-yR-94P"/>
-                                    <constraint firstItem="LYt-wM-z2c" firstAttribute="top" secondItem="n88-82-fZ5" secondAttribute="top" constant="191" id="5TQ-j4-vbg"/>
                                     <constraint firstItem="vXD-B3-DvH" firstAttribute="top" secondItem="n88-82-fZ5" secondAttribute="top" constant="147" id="5yD-ey-Zcp"/>
-                                    <constraint firstItem="n88-82-fZ5" firstAttribute="bottom" secondItem="LYt-wM-z2c" secondAttribute="bottom" constant="92" id="GsT-eq-zzv"/>
+                                    <constraint firstItem="VMo-Fa-uxx" firstAttribute="centerY" secondItem="T7g-gg-shC" secondAttribute="centerY" id="7bW-Cb-8Yb"/>
+                                    <constraint firstItem="VMo-Fa-uxx" firstAttribute="centerX" secondItem="T7g-gg-shC" secondAttribute="centerX" id="BGo-EC-JbC"/>
+                                    <constraint firstItem="vXD-B3-DvH" firstAttribute="top" secondItem="eFB-RU-sZk" secondAttribute="bottom" constant="8" id="E6d-5k-Uuh"/>
                                     <constraint firstItem="n88-82-fZ5" firstAttribute="bottom" secondItem="SV0-Go-Zju" secondAttribute="bottom" constant="63" id="IIA-Me-CFw"/>
-                                    <constraint firstItem="n88-82-fZ5" firstAttribute="trailing" secondItem="LYt-wM-z2c" secondAttribute="trailing" constant="20" id="QbR-fm-BlH"/>
-                                    <constraint firstItem="LYt-wM-z2c" firstAttribute="top" secondItem="eFB-RU-sZk" secondAttribute="bottom" constant="52" id="S7L-G7-m4p"/>
                                     <constraint firstItem="n88-82-fZ5" firstAttribute="trailing" secondItem="eFB-RU-sZk" secondAttribute="trailing" constant="70" id="VRr-TP-EZO"/>
-                                    <constraint firstItem="SV0-Go-Zju" firstAttribute="top" secondItem="LYt-wM-z2c" secondAttribute="bottom" constant="-5" id="YFB-Td-hCI"/>
                                     <constraint firstItem="eFB-RU-sZk" firstAttribute="top" secondItem="n88-82-fZ5" secondAttribute="top" constant="65" id="anD-4j-xcC"/>
-                                    <constraint firstItem="LYt-wM-z2c" firstAttribute="leading" secondItem="n88-82-fZ5" secondAttribute="leading" constant="20" id="aw4-0i-hUe"/>
                                     <constraint firstItem="SV0-Go-Zju" firstAttribute="leading" secondItem="n88-82-fZ5" secondAttribute="leading" id="jas-AL-K6W"/>
-                                    <constraint firstItem="LYt-wM-z2c" firstAttribute="top" secondItem="vXD-B3-DvH" secondAttribute="bottom" constant="8" id="lbM-5V-vPc"/>
                                     <constraint firstItem="n88-82-fZ5" firstAttribute="trailing" secondItem="vXD-B3-DvH" secondAttribute="trailing" constant="74" id="x86-Mo-JRe"/>
                                     <constraint firstItem="vXD-B3-DvH" firstAttribute="leading" secondItem="n88-82-fZ5" secondAttribute="leading" constant="73" id="yug-HB-jnC"/>
                                 </constraints>
@@ -317,6 +316,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Life" image="heart.circle" catalog="system" id="mwi-NK-4wk"/>
+                    <connections>
+                        <outlet property="lifeChart" destination="VMo-Fa-uxx" id="I6g-MO-OLE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FkP-8u-odF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,7 +332,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my day in pie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQG-Un-Zhg">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my day used in pie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQG-Un-Zhg">
                                 <rect key="frame" x="73" y="147" width="228" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="dDo-Hh-eGz"/>
@@ -415,11 +417,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Life" width="174.5" height="160.5"/>
-        <image name="Month" width="196.5" height="176.5"/>
-        <image name="Year" width="186.5" height="170"/>
         <image name="calendar.circle" catalog="system" width="128" height="121"/>
-        <image name="chart.pie" catalog="system" width="32" height="32"/>
+        <image name="chart.pie" catalog="system" width="128" height="121"/>
         <image name="heart.circle" catalog="system" width="128" height="121"/>
         <image name="leaf.arrow.triangle.circlepath" catalog="system" width="121" height="128"/>
         <image name="moon.circle" catalog="system" width="128" height="121"/>
