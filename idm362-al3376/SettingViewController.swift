@@ -6,6 +6,11 @@
 //
 
 import UIKit
+// Add audio and vid library
+import AVFoundation
+
+var myAudioPlayerObj = AVAudioPlayer()
+
 
 class SettingViewController: UIViewController {
     @IBOutlet weak var ageText: UITextField!
@@ -13,6 +18,17 @@ class SettingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let mySound = Bundle.main.path(forResource: "sounds/buttonclick", ofType: "mp3")
+        
+        do {
+          myAudioPlayerObj = try
+          AVAudioPlayer(contentsOf: URL(fileURLWithPath: mySound!))
+          myAudioPlayerObj.prepareToPlay()
+          print("Sound file loaded and prepped")
+        } catch {
+          print(error)
+        }
         
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -23,7 +39,7 @@ class SettingViewController: UIViewController {
 
         toolBar.setItems([flexibleSpace, doneButton], animated: false)
 
-        // Do any additional setup after loading the view.
+        // Do after loading the view.
         
         ageText.inputAccessoryView = toolBar
         expectancyText.inputAccessoryView = toolBar
@@ -38,7 +54,15 @@ class SettingViewController: UIViewController {
             view.endEditing(true)
         }
     
-
+    @IBAction func buttonSound(_ sender: Any) {
+        print("button sound called")
+        if (myAudioPlayerObj.isPlaying) {
+            myAudioPlayerObj.stop()
+        } else {
+            myAudioPlayerObj.play()
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

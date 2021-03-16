@@ -20,6 +20,7 @@
 		C08A998425E976D300E3F61C /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = C08A997D25E976D300E3F61C /* OFL.txt */; };
 		C08A998525E976D300E3F61C /* DMSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C08A997E25E976D300E3F61C /* DMSans-MediumItalic.ttf */; };
 		C08A998625E976D300E3F61C /* DMSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C08A997F25E976D300E3F61C /* DMSans-Italic.ttf */; };
+		C0DB10D9260060F500FAF60D /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = C0DB10D8260060F500FAF60D /* sounds */; };
 		C0E7884125BA2CF500FBCEAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7884025BA2CF500FBCEAB /* AppDelegate.swift */; };
 		C0E7884325BA2CF500FBCEAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7884225BA2CF500FBCEAB /* SceneDelegate.swift */; };
 		C0E7884525BA2CF500FBCEAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7884425BA2CF500FBCEAB /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		C08A997D25E976D300E3F61C /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		C08A997E25E976D300E3F61C /* DMSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-MediumItalic.ttf"; sourceTree = "<group>"; };
 		C08A997F25E976D300E3F61C /* DMSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Italic.ttf"; sourceTree = "<group>"; };
+		C0DB10D8260060F500FAF60D /* sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sounds; sourceTree = "<group>"; };
 		C0E7883D25BA2CF500FBCEAB /* idm362-al3376.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "idm362-al3376.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E7884025BA2CF500FBCEAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0E7884225BA2CF500FBCEAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		C0E7883425BA2CF500FBCEAB = {
 			isa = PBXGroup;
 			children = (
+				C0DB10D8260060F500FAF60D /* sounds */,
 				C0E7883F25BA2CF500FBCEAB /* idm362-al3376 */,
 				C0E7883E25BA2CF500FBCEAB /* Products */,
 				C08A997825E976D300E3F61C /* DM_Sans */,
@@ -181,6 +184,7 @@
 				C08A998625E976D300E3F61C /* DMSans-Italic.ttf in Resources */,
 				C08A998325E976D300E3F61C /* DMSans-BoldItalic.ttf in Resources */,
 				C08A998525E976D300E3F61C /* DMSans-MediumItalic.ttf in Resources */,
+				C0DB10D9260060F500FAF60D /* sounds in Resources */,
 				C0E7884D25BA2CFA00FBCEAB /* LaunchScreen.storyboard in Resources */,
 				C0E7884A25BA2CFA00FBCEAB /* Assets.xcassets in Resources */,
 				C0E7884825BA2CF500FBCEAB /* Main.storyboard in Resources */,

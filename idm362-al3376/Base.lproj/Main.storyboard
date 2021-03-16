@@ -60,6 +60,20 @@
                                         <attributedString key="attributedText"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2V-9d-JGa">
+                                        <rect key="frame" x="153" y="331" width="68" height="30"/>
+                                        <color key="backgroundColor" red="0.80392156859999997" green="0.96078431369999995" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="zKh-7b-Vmw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="SAVE">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSound:" destination="HS6-la-KyG" eventType="touchUpInside" id="B78-Or-YAQ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="rR2-BZ-tRI"/>
                                 <color key="backgroundColor" red="0.87450980389999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,6 +81,7 @@
                                     <constraint firstItem="rR2-BZ-tRI" firstAttribute="trailing" secondItem="RZW-Kj-Hrn" secondAttribute="trailing" constant="62" id="26l-3p-Rm5"/>
                                     <constraint firstItem="R2Q-cZ-KZf" firstAttribute="leading" secondItem="fpc-bL-vYs" secondAttribute="leading" id="3FF-pe-J1c"/>
                                     <constraint firstItem="R2Q-cZ-KZf" firstAttribute="leading" secondItem="rR2-BZ-tRI" secondAttribute="leading" constant="61" id="3cx-ve-zLE"/>
+                                    <constraint firstItem="g2V-9d-JGa" firstAttribute="leading" secondItem="rR2-BZ-tRI" secondAttribute="leading" constant="153" id="8Pl-FQ-BOj"/>
                                     <constraint firstItem="RZW-Kj-Hrn" firstAttribute="leading" secondItem="rR2-BZ-tRI" secondAttribute="leading" constant="61" id="9Nd-I4-4as"/>
                                     <constraint firstItem="rR2-BZ-tRI" firstAttribute="trailing" secondItem="fpc-bL-vYs" secondAttribute="trailing" constant="62" id="LP6-Dc-cRs"/>
                                     <constraint firstItem="rR2-BZ-tRI" firstAttribute="trailing" secondItem="out-r8-rDC" secondAttribute="trailing" constant="20" id="NbV-SX-Mrs"/>
@@ -78,9 +93,11 @@
                                     <constraint firstItem="out-r8-rDC" firstAttribute="top" secondItem="rR2-BZ-tRI" secondAttribute="top" constant="34" id="eqf-3W-zDz"/>
                                     <constraint firstItem="rR2-BZ-tRI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="u9h-tH-emJ" secondAttribute="trailing" symbolic="YES" id="fVa-Ph-hpo"/>
                                     <constraint firstItem="rR2-BZ-tRI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R2Q-cZ-KZf" secondAttribute="trailing" symbolic="YES" id="jSJ-Ew-JJb"/>
+                                    <constraint firstItem="g2V-9d-JGa" firstAttribute="centerX" secondItem="fpc-bL-vYs" secondAttribute="centerX" id="pKj-wa-ijP"/>
                                     <constraint firstItem="R2Q-cZ-KZf" firstAttribute="top" secondItem="RZW-Kj-Hrn" secondAttribute="bottom" constant="22" id="qcZ-pt-bCi"/>
                                     <constraint firstItem="u9h-tH-emJ" firstAttribute="top" secondItem="out-r8-rDC" secondAttribute="bottom" constant="53" id="tHK-Rf-KvT"/>
                                     <constraint firstItem="RZW-Kj-Hrn" firstAttribute="top" secondItem="out-r8-rDC" secondAttribute="bottom" constant="85" id="vx6-98-1UH"/>
+                                    <constraint firstItem="g2V-9d-JGa" firstAttribute="top" secondItem="fpc-bL-vYs" secondAttribute="bottom" constant="41.5" id="ycm-oK-A5k"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -95,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVX-s4-9IO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2342" y="-905"/>
+            <point key="canvasLocation" x="2341.5999999999999" y="-905.3973013493254"/>
         </scene>
         <!--Month-->
         <scene sceneID="Xf1-4N-pgE">
@@ -417,8 +434,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar.circle" catalog="system" width="128" height="121"/>
-        <image name="chart.pie" catalog="system" width="128" height="121"/>
+        <image name="calendar.circle" catalog="system" width="32" height="32"/>
+        <image name="chart.pie" catalog="system" width="32" height="32"/>
         <image name="heart.circle" catalog="system" width="128" height="121"/>
         <image name="leaf.arrow.triangle.circlepath" catalog="system" width="121" height="128"/>
         <image name="moon.circle" catalog="system" width="128" height="121"/>
