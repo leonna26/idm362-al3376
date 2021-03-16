@@ -422,7 +422,7 @@
         <image name="Life" width="174.5" height="160.5"/>
         <image name="Month" width="196.5" height="176.5"/>
         <image name="Year" width="186.5" height="170"/>
-        <image name="calendar.circle" catalog="system" width="128" height="121"/>
+        <image name="calendar.circle" catalog="system" width="32" height="32"/>
         <image name="chart.pie" catalog="system" width="32" height="32"/>
         <image name="heart.circle" catalog="system" width="128" height="121"/>
         <image name="leaf.arrow.triangle.circlepath" catalog="system" width="121" height="128"/>
