@@ -60,11 +60,11 @@ class MonthChartViewController: UIViewController {
  //    }
      
      // set first slice color
-     var color = UIColor(red: 1, green: 0.91, blue: 0.60, alpha: 1)
+    var color = UIColor(red: 0.46, green: 0.45, blue: 0.80, alpha: 1)
        colors.append(color)
 
      // set second slice color
-    color = UIColor(red: 0.47, green: 0.73, blue: 0.57, alpha: 1)
+    color = UIColor(red: 0.29, green: 0.46, blue: 0.36, alpha: 1)
      colors.append(color)
 
      return colors

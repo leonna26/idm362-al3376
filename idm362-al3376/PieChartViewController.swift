@@ -62,11 +62,11 @@ customizeChart(dataPoints: players, values: goals.map{ Double($0) })
 //    }
     
     // set first slice color
-    var color = UIColor(red: 1, green: 0.91, blue: 0.60, alpha: 1)
+    var color = UIColor(red: 0.56, green: 0.17, blue: 0.0, alpha: 1)
       colors.append(color)
 
     // set second slice color
-    color = UIColor(red: 1, green: 0.71, blue: 0.71, alpha: 1)
+    color = UIColor(red: 0.36, green: 0.29, blue: 0.46, alpha: 1)
     colors.append(color)
 
     return colors

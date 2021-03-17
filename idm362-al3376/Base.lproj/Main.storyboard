@@ -39,13 +39,13 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="how old are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9h-tH-emJ">
-                                        <rect key="frame" x="61" y="137" width="131" height="20"/>
+                                        <rect key="frame" x="61" y="137" width="135" height="22.5"/>
                                         <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="how long do you want to live?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2Q-cZ-KZf">
-                                        <rect key="frame" x="61" y="225" width="227.5" height="20"/>
+                                        <rect key="frame" x="61" y="225" width="235" height="22.5"/>
                                         <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -56,16 +56,16 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="continue"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="78" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpc-bL-vYs">
-                                        <rect key="frame" x="61" y="253" width="252" height="34"/>
+                                        <rect key="frame" x="61" y="255.5" width="252" height="34"/>
                                         <attributedString key="attributedText"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2V-9d-JGa">
-                                        <rect key="frame" x="125" y="350.5" width="125" height="33"/>
-                                        <color key="backgroundColor" red="0.80392156859999997" green="0.96078431369999995" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <rect key="frame" x="125" y="353" width="125" height="33"/>
+                                        <color key="backgroundColor" red="0.42352941176470588" green="0.14509803921568626" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="SAVE">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -134,20 +134,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my month used in pie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MZ-Pq-PdU">
-                                        <rect key="frame" x="73" y="147" width="228" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="Jn6-tU-PWQ"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="65%" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjf-zx-VyF">
-                                        <rect key="frame" x="69" y="65" width="236" height="88"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="88" id="Mv7-ot-9zC"/>
-                                        </constraints>
+                                        <rect key="frame" x="69" y="37" width="236" height="74"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="60"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -162,25 +150,35 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0I5-56-zbV" customClass="PieChartView" customModule="Charts">
-                                        <rect key="frame" x="50" y="196" width="275" height="275"/>
+                                        <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="275" id="aVJ-Pz-DSJ"/>
-                                            <constraint firstAttribute="height" constant="275" id="rP5-Dn-u7W"/>
+                                            <constraint firstAttribute="width" constant="300" id="aVJ-Pz-DSJ"/>
+                                            <constraint firstAttribute="height" constant="300" id="rP5-Dn-u7W"/>
                                         </constraints>
                                     </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my month used in pie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MZ-Pq-PdU">
+                                        <rect key="frame" x="73" y="119" width="228" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="Jn6-tU-PWQ"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="00N-Fr-ne8"/>
                                 <color key="backgroundColor" red="0.87450980389999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Ptc-tv-Wk5" firstAttribute="trailing" secondItem="00N-Fr-ne8" secondAttribute="trailing" id="1CT-de-O2b"/>
-                                    <constraint firstItem="Zjf-zx-VyF" firstAttribute="top" secondItem="00N-Fr-ne8" secondAttribute="top" constant="65" id="8K9-Qo-CqH"/>
                                     <constraint firstItem="00N-Fr-ne8" firstAttribute="trailing" secondItem="Zjf-zx-VyF" secondAttribute="trailing" constant="70" id="9qP-dj-E7O"/>
+                                    <constraint firstItem="0MZ-Pq-PdU" firstAttribute="top" secondItem="00N-Fr-ne8" secondAttribute="top" constant="119" id="BRd-RB-CAK"/>
+                                    <constraint firstItem="Zjf-zx-VyF" firstAttribute="top" secondItem="00N-Fr-ne8" secondAttribute="top" constant="37" id="Ob3-04-gpk"/>
                                     <constraint firstItem="00N-Fr-ne8" firstAttribute="bottom" secondItem="Ptc-tv-Wk5" secondAttribute="bottom" constant="63" id="T4M-3G-RgZ"/>
                                     <constraint firstItem="00N-Fr-ne8" firstAttribute="trailing" secondItem="0MZ-Pq-PdU" secondAttribute="trailing" constant="74" id="UZA-NF-kCb"/>
                                     <constraint firstItem="0I5-56-zbV" firstAttribute="centerY" secondItem="N13-Ig-O56" secondAttribute="centerY" id="kPL-Ei-xKL"/>
                                     <constraint firstItem="Ptc-tv-Wk5" firstAttribute="leading" secondItem="00N-Fr-ne8" secondAttribute="leading" id="lqc-GF-XSi"/>
-                                    <constraint firstItem="0MZ-Pq-PdU" firstAttribute="top" secondItem="00N-Fr-ne8" secondAttribute="top" constant="147" id="nIC-AD-9r2"/>
+                                    <constraint firstItem="0MZ-Pq-PdU" firstAttribute="top" secondItem="Zjf-zx-VyF" secondAttribute="bottom" constant="8" id="qec-cX-Ung"/>
                                     <constraint firstItem="0MZ-Pq-PdU" firstAttribute="leading" secondItem="00N-Fr-ne8" secondAttribute="leading" constant="73" id="tI3-eO-o36"/>
                                     <constraint firstItem="Zjf-zx-VyF" firstAttribute="leading" secondItem="00N-Fr-ne8" secondAttribute="leading" constant="69" id="vBH-3c-LMT"/>
                                     <constraint firstItem="0I5-56-zbV" firstAttribute="centerX" secondItem="N13-Ig-O56" secondAttribute="centerX" id="zoV-j1-aeS"/>
@@ -221,7 +219,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my year used in pie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSV-c2-EBb">
-                                        <rect key="frame" x="73" y="147" width="228" height="36"/>
+                                        <rect key="frame" x="73" y="119" width="228" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="huI-w1-KUs"/>
                                         </constraints>
@@ -230,17 +228,17 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="12%" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVV-QC-dUz">
-                                        <rect key="frame" x="69" y="65" width="236" height="74"/>
+                                        <rect key="frame" x="69" y="37" width="236" height="74"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="60"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0K-vD-ZDx" customClass="PieChartView" customModule="Charts">
-                                        <rect key="frame" x="50" y="196" width="275" height="275"/>
+                                        <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="275" id="8Vz-YF-aDo"/>
-                                            <constraint firstAttribute="height" constant="275" id="Jpv-VJ-0cF"/>
+                                            <constraint firstAttribute="width" constant="300" id="8Vz-YF-aDo"/>
+                                            <constraint firstAttribute="height" constant="300" id="Jpv-VJ-0cF"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -249,7 +247,7 @@
                                 <constraints>
                                     <constraint firstItem="YSV-c2-EBb" firstAttribute="leading" secondItem="BeP-S2-BXi" secondAttribute="leading" constant="73" id="0fj-4t-h6Y"/>
                                     <constraint firstItem="EDX-yj-LNU" firstAttribute="trailing" secondItem="BeP-S2-BXi" secondAttribute="trailing" id="7gj-2q-H7S"/>
-                                    <constraint firstItem="YSV-c2-EBb" firstAttribute="top" secondItem="BeP-S2-BXi" secondAttribute="top" constant="147" id="Cqa-r2-7Ti"/>
+                                    <constraint firstItem="YSV-c2-EBb" firstAttribute="top" secondItem="BeP-S2-BXi" secondAttribute="top" constant="119" id="Cqa-r2-7Ti"/>
                                     <constraint firstItem="BeP-S2-BXi" firstAttribute="trailing" secondItem="YSV-c2-EBb" secondAttribute="trailing" constant="74" id="KqG-rd-bFo"/>
                                     <constraint firstItem="e0K-vD-ZDx" firstAttribute="centerX" secondItem="mXD-KJ-Xlk" secondAttribute="centerX" id="N9L-JQ-AjX"/>
                                     <constraint firstItem="BeP-S2-BXi" firstAttribute="bottom" secondItem="EDX-yj-LNU" secondAttribute="bottom" constant="63" id="TeL-2n-v3V"/>
@@ -258,7 +256,7 @@
                                     <constraint firstItem="pVV-QC-dUz" firstAttribute="leading" secondItem="BeP-S2-BXi" secondAttribute="leading" constant="69" id="pBc-gY-Vqi"/>
                                     <constraint firstItem="EDX-yj-LNU" firstAttribute="leading" secondItem="BeP-S2-BXi" secondAttribute="leading" id="riy-tp-4DT"/>
                                     <constraint firstItem="YSV-c2-EBb" firstAttribute="top" secondItem="pVV-QC-dUz" secondAttribute="bottom" constant="8" id="z9r-J5-xa6"/>
-                                    <constraint firstItem="pVV-QC-dUz" firstAttribute="top" secondItem="BeP-S2-BXi" secondAttribute="top" constant="65" id="zAD-R6-O6C"/>
+                                    <constraint firstItem="pVV-QC-dUz" firstAttribute="top" secondItem="BeP-S2-BXi" secondAttribute="top" constant="37" id="zAD-R6-O6C"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -287,7 +285,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my life in pie used" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXD-B3-DvH">
-                                        <rect key="frame" x="73" y="147" width="228" height="36"/>
+                                        <rect key="frame" x="73" y="119" width="228" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="aZy-zm-bxa"/>
                                         </constraints>
@@ -296,7 +294,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="27%" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFB-RU-sZk">
-                                        <rect key="frame" x="69" y="65" width="236" height="74"/>
+                                        <rect key="frame" x="69" y="37" width="236" height="74"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="60"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -311,11 +309,11 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMo-Fa-uxx" customClass="PieChartView" customModule="Charts">
-                                        <rect key="frame" x="50" y="196" width="275" height="275"/>
+                                        <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="275" id="f1w-ic-FPU"/>
-                                            <constraint firstAttribute="height" constant="275" id="ffp-10-quD"/>
+                                            <constraint firstAttribute="width" constant="300" id="f1w-ic-FPU"/>
+                                            <constraint firstAttribute="height" constant="300" id="ffp-10-quD"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -324,13 +322,13 @@
                                 <constraints>
                                     <constraint firstItem="SV0-Go-Zju" firstAttribute="trailing" secondItem="n88-82-fZ5" secondAttribute="trailing" id="0gn-mw-MsS"/>
                                     <constraint firstItem="eFB-RU-sZk" firstAttribute="leading" secondItem="n88-82-fZ5" secondAttribute="leading" constant="69" id="4Ur-yR-94P"/>
-                                    <constraint firstItem="vXD-B3-DvH" firstAttribute="top" secondItem="n88-82-fZ5" secondAttribute="top" constant="147" id="5yD-ey-Zcp"/>
+                                    <constraint firstItem="vXD-B3-DvH" firstAttribute="top" secondItem="n88-82-fZ5" secondAttribute="top" constant="119" id="5yD-ey-Zcp"/>
                                     <constraint firstItem="VMo-Fa-uxx" firstAttribute="centerY" secondItem="T7g-gg-shC" secondAttribute="centerY" id="7bW-Cb-8Yb"/>
                                     <constraint firstItem="VMo-Fa-uxx" firstAttribute="centerX" secondItem="T7g-gg-shC" secondAttribute="centerX" id="BGo-EC-JbC"/>
                                     <constraint firstItem="vXD-B3-DvH" firstAttribute="top" secondItem="eFB-RU-sZk" secondAttribute="bottom" constant="8" id="E6d-5k-Uuh"/>
                                     <constraint firstItem="n88-82-fZ5" firstAttribute="bottom" secondItem="SV0-Go-Zju" secondAttribute="bottom" constant="63" id="IIA-Me-CFw"/>
                                     <constraint firstItem="n88-82-fZ5" firstAttribute="trailing" secondItem="eFB-RU-sZk" secondAttribute="trailing" constant="70" id="VRr-TP-EZO"/>
-                                    <constraint firstItem="eFB-RU-sZk" firstAttribute="top" secondItem="n88-82-fZ5" secondAttribute="top" constant="65" id="anD-4j-xcC"/>
+                                    <constraint firstItem="eFB-RU-sZk" firstAttribute="top" secondItem="n88-82-fZ5" secondAttribute="top" constant="37" id="anD-4j-xcC"/>
                                     <constraint firstItem="SV0-Go-Zju" firstAttribute="leading" secondItem="n88-82-fZ5" secondAttribute="leading" id="jas-AL-K6W"/>
                                     <constraint firstItem="n88-82-fZ5" firstAttribute="trailing" secondItem="vXD-B3-DvH" secondAttribute="trailing" constant="74" id="x86-Mo-JRe"/>
                                     <constraint firstItem="vXD-B3-DvH" firstAttribute="leading" secondItem="n88-82-fZ5" secondAttribute="leading" constant="73" id="yug-HB-jnC"/>
@@ -357,23 +355,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my day used in pie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQG-Un-Zhg">
-                                <rect key="frame" x="73" y="147" width="228" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="dDo-Hh-eGz"/>
-                                </constraints>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="86%" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLU-6Z-wgh">
-                                <rect key="frame" x="69" y="65" width="236" height="74"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="60"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="make your life sweet. occu-pie your life well." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yf9-js-WbU">
-                                <rect key="frame" x="0.0" y="518" width="375" height="34"/>
+                                <rect key="frame" x="0.0" y="521" width="375" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="pDx-3q-KkN"/>
                                 </constraints>
@@ -382,29 +365,44 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onc-Fr-l3a" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="50" y="196" width="275" height="275"/>
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="275" id="KXC-UA-DjL"/>
-                                    <constraint firstAttribute="height" constant="275" id="mVA-An-6Uq"/>
+                                    <constraint firstAttribute="width" constant="300" id="KXC-UA-DjL"/>
+                                    <constraint firstAttribute="height" constant="300" id="mVA-An-6Uq"/>
                                 </constraints>
                             </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="my day used in pie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQG-Un-Zhg">
+                                <rect key="frame" x="73" y="119" width="228" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="dDo-Hh-eGz"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="86%" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLU-6Z-wgh">
+                                <rect key="frame" x="69" y="37" width="236" height="74"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="60"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SDe-h6-niS"/>
                         <color key="backgroundColor" red="0.87450980392156863" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SDe-h6-niS" firstAttribute="trailing" secondItem="VQG-Un-Zhg" secondAttribute="trailing" constant="74" id="2g2-pi-8ru"/>
                             <constraint firstItem="QLU-6Z-wgh" firstAttribute="leading" secondItem="SDe-h6-niS" secondAttribute="leading" constant="69" id="4Ee-ht-Wq9"/>
-                            <constraint firstItem="VQG-Un-Zhg" firstAttribute="top" secondItem="SDe-h6-niS" secondAttribute="top" constant="147" id="9Ci-hu-H8N"/>
                             <constraint firstItem="SDe-h6-niS" firstAttribute="trailing" secondItem="QLU-6Z-wgh" secondAttribute="trailing" constant="70" id="B9G-40-Zu9"/>
                             <constraint firstItem="onc-Fr-l3a" firstAttribute="centerY" secondItem="aMg-D1-M5v" secondAttribute="centerY" id="I04-7v-Jeu"/>
+                            <constraint firstItem="QLU-6Z-wgh" firstAttribute="top" secondItem="SDe-h6-niS" secondAttribute="top" constant="37" id="KGK-h2-qWW"/>
+                            <constraint firstItem="onc-Fr-l3a" firstAttribute="centerX" secondItem="aMg-D1-M5v" secondAttribute="centerX" id="RI3-qy-vNy"/>
                             <constraint firstItem="SDe-h6-niS" firstAttribute="trailing" secondItem="Yf9-js-WbU" secondAttribute="trailing" id="SGd-Ze-zOJ"/>
-                            <constraint firstItem="onc-Fr-l3a" firstAttribute="centerX" secondItem="aMg-D1-M5v" secondAttribute="centerX" id="UNq-XK-wLT"/>
                             <constraint firstItem="VQG-Un-Zhg" firstAttribute="top" secondItem="QLU-6Z-wgh" secondAttribute="bottom" constant="8" id="VyX-l4-7vq"/>
+                            <constraint firstItem="VQG-Un-Zhg" firstAttribute="top" secondItem="SDe-h6-niS" secondAttribute="top" constant="119" id="ZFQ-da-hI7"/>
                             <constraint firstItem="Yf9-js-WbU" firstAttribute="leading" secondItem="SDe-h6-niS" secondAttribute="leading" id="ZvX-Bo-WJA"/>
                             <constraint firstItem="VQG-Un-Zhg" firstAttribute="leading" secondItem="SDe-h6-niS" secondAttribute="leading" constant="73" id="bMq-1J-5as"/>
-                            <constraint firstItem="QLU-6Z-wgh" firstAttribute="top" secondItem="SDe-h6-niS" secondAttribute="top" constant="65" id="ghk-qT-Fxq"/>
-                            <constraint firstItem="SDe-h6-niS" firstAttribute="bottom" secondItem="Yf9-js-WbU" secondAttribute="bottom" constant="66" id="ppL-ep-rZK"/>
+                            <constraint firstItem="SDe-h6-niS" firstAttribute="bottom" secondItem="Yf9-js-WbU" secondAttribute="bottom" constant="63" id="ppL-ep-rZK"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Day" image="moon.circle" catalog="system" id="Wsd-8g-YP9">
@@ -442,13 +440,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar.circle" catalog="system" width="32" height="32"/>
-        <image name="chart.pie" catalog="system" width="32" height="32"/>
-        <image name="heart.circle" catalog="system" width="32" height="32"/>
-        <image name="leaf.arrow.triangle.circlepath" catalog="system" width="32" height="32"/>
-        <image name="moon.circle" catalog="system" width="32" height="32"/>
+        <image name="calendar.circle" catalog="system" width="128" height="121"/>
+        <image name="chart.pie" catalog="system" width="128" height="121"/>
+        <image name="heart.circle" catalog="system" width="128" height="121"/>
+        <image name="leaf.arrow.triangle.circlepath" catalog="system" width="121" height="128"/>
+        <image name="moon.circle" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
-            <color red="0.94900000095367432" green="0.62000000476837158" blue="0.88400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.74117647058823533" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

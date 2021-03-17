@@ -64,11 +64,11 @@ class YearChartViewController: UIViewController {
  //    }
      
      // set first slice color
-     var color = UIColor(red: 1, green: 0.91, blue: 0.60, alpha: 1)
+    var color = UIColor(red: 0.74, green: 0.34, blue: 0.34, alpha: 1)
        colors.append(color)
 
      // set second slice color
-    color = UIColor(red: 0.77, green: 0.69, blue: 0.84, alpha: 1)
+    color = UIColor(red: 0.29, green: 0.46, blue: 0.46, alpha: 1)
      colors.append(color)
 
      return colors

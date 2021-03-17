@@ -64,11 +64,11 @@ class LifeChartViewController: UIViewController {
  //    }
      
      // set first slice color
-     var color = UIColor(red: 1, green: 0.91, blue: 0.60, alpha: 1)
+    var color = UIColor(red: 0.42, green: 0.15, blue: 0.42, alpha: 1)
        colors.append(color)
 
      // set second slice color
-    color = UIColor(red: 0.53, green: 0.78, blue: 1, alpha: 1)
+    color = UIColor(red: 0.22, green: 0.27, blue: 0.52, alpha: 1)
      colors.append(color)
 
      return colors
