@@ -39,13 +39,13 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="how old are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9h-tH-emJ">
-                                        <rect key="frame" x="61" y="137" width="135" height="22.5"/>
+                                        <rect key="frame" x="61" y="137" width="131" height="20"/>
                                         <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="how long do you want to live?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2Q-cZ-KZf">
-                                        <rect key="frame" x="61" y="225" width="235" height="22.5"/>
+                                        <rect key="frame" x="61" y="225" width="227.5" height="20"/>
                                         <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -56,12 +56,12 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="continue"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="78" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpc-bL-vYs">
-                                        <rect key="frame" x="61" y="255.5" width="252" height="34"/>
+                                        <rect key="frame" x="61" y="253" width="252" height="34"/>
                                         <attributedString key="attributedText"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2V-9d-JGa">
-                                        <rect key="frame" x="125" y="353" width="125" height="33"/>
+                                        <rect key="frame" x="125" y="350.5" width="125" height="33"/>
                                         <color key="backgroundColor" red="0.80392156859999997" green="0.96078431369999995" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="SAVE">
@@ -444,9 +444,9 @@
     <resources>
         <image name="calendar.circle" catalog="system" width="32" height="32"/>
         <image name="chart.pie" catalog="system" width="32" height="32"/>
-        <image name="heart.circle" catalog="system" width="128" height="121"/>
-        <image name="leaf.arrow.triangle.circlepath" catalog="system" width="121" height="128"/>
-        <image name="moon.circle" catalog="system" width="128" height="121"/>
+        <image name="heart.circle" catalog="system" width="32" height="32"/>
+        <image name="leaf.arrow.triangle.circlepath" catalog="system" width="32" height="32"/>
+        <image name="moon.circle" catalog="system" width="32" height="32"/>
         <namedColor name="AccentColor">
             <color red="0.94900000095367432" green="0.62000000476837158" blue="0.88400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
